@@ -1,7 +1,10 @@
 object uocra {
 	
-	var obrerosRegistrados
-	
+    var obrerosRegistrados
+    var superficieAConstruir
+    var property habilitada = true
+    var completaronTareas = true
+    
 	method jornalAlbanil() {
 		return 300
 	}
@@ -18,4 +21,10 @@ object uocra {
 		return 1000
 	}
 	
+
+ 	method estaHabilitada(){habilitada=true}
+    
+    method finalizar(){completaronTareas=true}
+   
+    method estaFinalizada(){}//completar
 }
